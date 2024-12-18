@@ -1,0 +1,9 @@
+# Debug files
+*.mtud
+**/DefaultBuild/
+
+
+# cscope files
+*.out
+*.files
+
