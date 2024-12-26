@@ -245,6 +245,7 @@
       <RelativePath>Source\util.c</RelativePath>
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
       <ParentItem>e0c657df-e259-41aa-99d8-521765dc8ee9</ParentItem>
+      <Property>4fff3ee2-3715-429a-a949-076a368f9d6a</Property>
     </Instance>
     <Instance Guid="6dd99b8e-2708-4049-8d56-f935e106bd61">
       <Name>util.h</Name>
@@ -332,6 +333,7 @@
       <RelativePath>Source\hal\hal_key.c</RelativePath>
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
       <ParentItem>bac5ec35-353e-4c0d-aca4-3543c370b4e4</ParentItem>
+      <Property>69b4df68-7552-4402-8793-f471fa664476</Property>
     </Instance>
     <Instance Guid="bc2cb878-6f7a-4f9f-9d59-e0f6bfd8030b">
       <Name>hal_key.h</Name>
@@ -369,6 +371,7 @@
       <RelativePath>Source\hal\hal_led_onoff.h</RelativePath>
       <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
       <ParentItem>bac5ec35-353e-4c0d-aca4-3543c370b4e4</ParentItem>
+      <Property>3c03895d-0c58-42eb-a0fb-54a0fa556ea2</Property>
     </Instance>
     <Instance Guid="3b0ae459-0ac0-4421-8628-e5ced5f8e4ad">
       <Name>hw.h</Name>
@@ -390,6 +393,7 @@
       <RelativePath>Source\key\key.c</RelativePath>
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
       <ParentItem>fd1aac95-b8ea-487e-929b-ec4d47493de3</ParentItem>
+      <Property>cef1eaa4-b530-4817-8d02-39634ec020bb</Property>
     </Instance>
     <Instance Guid="07127d3b-31b3-4085-9e9a-edcdc0495122">
       <Name>key.h</Name>
@@ -434,6 +438,7 @@
       <RelativePath>Source\key\key_handler.h</RelativePath>
       <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
       <ParentItem>fd1aac95-b8ea-487e-929b-ec4d47493de3</ParentItem>
+      <Property>34cf801f-6cd3-4038-9e37-b16bedb25a98</Property>
     </Instance>
     <Instance Guid="67bb77f9-4d01-4db6-a472-4a0555b14272">
       <Name>key_normal_handler.c</Name>
@@ -457,6 +462,7 @@
       <RelativePath>Source\key\process_key.c</RelativePath>
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
       <ParentItem>fd1aac95-b8ea-487e-929b-ec4d47493de3</ParentItem>
+      <Property>f9ca84ff-e79e-411c-96cc-09be603c3546</Property>
     </Instance>
     <Instance Guid="6434a961-e0b6-4ea2-9674-8f3a7882a432">
       <Name>process_key.h</Name>
@@ -502,6 +508,7 @@
       <RelativePath>Source\timer\timer.c</RelativePath>
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
       <ParentItem>1bb4028b-9f6f-44c4-a3fb-56baa818fde8</ParentItem>
+      <Property>3af556b1-7e89-4712-b321-aeb52868a509</Property>
     </Instance>
     <Instance Guid="8d31fd3e-2829-4d8d-abb3-eef6a58d5444">
       <Name>timer.h</Name>
@@ -569,6 +576,9 @@
     <Instance Guid="afb059c7-3bfa-4654-a6db-ce28bc90fd99">
       <MemoCount>0</MemoCount>
     </Instance>
+    <Instance Guid="4fff3ee2-3715-429a-a949-076a368f9d6a">
+      <MemoCount>0</MemoCount>
+    </Instance>
     <Instance Guid="ac0241ea-bd3d-42c1-9778-f1da24ae3c6e">
       <MemoCount>0</MemoCount>
     </Instance>
@@ -578,10 +588,19 @@
     <Instance Guid="33026184-ccd7-4fe7-b3d1-fecd972691e0">
       <MemoCount>0</MemoCount>
     </Instance>
+    <Instance Guid="69b4df68-7552-4402-8793-f471fa664476">
+      <MemoCount>0</MemoCount>
+    </Instance>
     <Instance Guid="4e9987a0-e133-4540-91dd-f28e23e74303">
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="f15c95b8-5629-4631-a70f-c7e34364942a">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="3c03895d-0c58-42eb-a0fb-54a0fa556ea2">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="cef1eaa4-b530-4817-8d02-39634ec020bb">
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="6d3bbd59-1abf-406f-9eeb-3ec05653dc7c">
@@ -590,10 +609,16 @@
     <Instance Guid="8c3d0d62-f879-4699-9c4d-e7dc80427a25">
       <MemoCount>0</MemoCount>
     </Instance>
+    <Instance Guid="34cf801f-6cd3-4038-9e37-b16bedb25a98">
+      <MemoCount>0</MemoCount>
+    </Instance>
     <Instance Guid="eed9e01d-8c68-4dbf-bf80-7210586d93cd">
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="ca644354-7d94-4c68-807d-fd224920091d">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="f9ca84ff-e79e-411c-96cc-09be603c3546">
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="24d7536e-4409-4206-aa30-8163cc1803e2">
@@ -603,6 +628,9 @@
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="fb4d0f14-1bd9-4b39-aef7-ad6e0766852b">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="3af556b1-7e89-4712-b321-aeb52868a509">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -619,6 +647,9 @@
     <Instance Guid="91bbb2e8-ef15-4d16-bc23-3aefefde2278">
       <MemoCount>0</MemoCount>
     </Instance>
+    <Instance Guid="6285dc30-ed3a-4b88-a262-3957a16c7783">
+      <MemoCount>0</MemoCount>
+    </Instance>
     <Instance Guid="4cc73326-6883-425d-b4b3-9890b5b93764">
       <MemoCount>0</MemoCount>
     </Instance>
@@ -629,9 +660,6 @@
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="8f7875e9-1847-412e-aa6c-003cbe5cd41d">
-      <MemoCount>0</MemoCount>
-    </Instance>
-    <Instance Guid="6285dc30-ed3a-4b88-a262-3957a16c7783">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -2006,16 +2034,88 @@ Source\timer
       <DebuggerProperty-DownloadProperty-Download-DownloadMode>SpeedPriority</DebuggerProperty-DownloadProperty-Download-DownloadMode>
       <DebuggerProperty-DownloadProperty-DebugInformation-MonitorOverwrite>Yes</DebuggerProperty-DownloadProperty-DebugInformation-MonitorOverwrite>
       <DebuggerProperty-OptionalProperty-AccessMemory-UpdateDisplayInExecution>Yes</DebuggerProperty-OptionalProperty-AccessMemory-UpdateDisplayInExecution>
-      <DebuggerProperty-OptionalProperty-AccessMemory-UpdateInterval>500</DebuggerProperty-OptionalProperty-AccessMemory-UpdateInterval>
+      <DebuggerProperty-OptionalProperty-AccessMemory-UpdateInterval>100</DebuggerProperty-OptionalProperty-AccessMemory-UpdateInterval>
       <DebuggerProperty-OptionalProperty-Register-ClearRegisterWhenReset>No</DebuggerProperty-OptionalProperty-Register-ClearRegisterWhenReset>
-      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-Length>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-Length>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-Length>9</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-Length>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-MapType>InternalRom</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-StartAddress>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-EndAddress>65535</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-AccessSize>16</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem0-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-MapType>NonMap</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-StartAddress>65536</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-EndAddress>983039</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-AccessSize>8</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem1-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-MapType>Sfr</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-StartAddress>983040</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-EndAddress>985087</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-AccessSize>8</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem2-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-MapType>NonMap</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-StartAddress>985088</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-EndAddress>987135</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-AccessSize>8</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem3-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-MapType>Eeprom</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-StartAddress>987136</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-EndAddress>991231</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-AccessSize>8</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem4-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-MapType>Mirror</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-StartAddress>991232</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-EndAddress>1044223</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-AccessSize>16</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem5-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-MapType>InternalRam</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-StartAddress>1044224</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-EndAddress>1048287</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-AccessSize>16</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem6-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-MapType>Register</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-StartAddress>1048288</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-EndAddress>1048319</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-AccessSize>16</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem7-FieldInformation>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-MapType>Sfr</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-MapType>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-StartAddress>1048320</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-StartAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-EndAddress>1048575</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-EndAddress>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-ChipSelect>0</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-ChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-AccessSize>8</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-AccessSize>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-IsReadOnly>True</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-IsReadOnly>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-HasChipSelect>False</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-HasChipSelect>
+      <DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-FieldInformation>None</DebuggerProperty-OptionalProperty-Memory-MemoryMappings-MemoryMapItem8-FieldInformation>
       <DebuggerProperty-OptionalProperty-Memory-VerifyCheck>Yes</DebuggerProperty-OptionalProperty-Memory-VerifyCheck>
       <DebuggerProperty-OptionalProperty-Assemble-DisplaySymbol>SymbolOffset</DebuggerProperty-OptionalProperty-Assemble-DisplaySymbol>
       <DebuggerProperty-OptionalProperty-Assemble-DisplayFunctionName>Yes</DebuggerProperty-OptionalProperty-Assemble-DisplayFunctionName>
       <DebuggerProperty-OptionalProperty-Break-BreakpointPriority>SoftwareBreak</DebuggerProperty-OptionalProperty-Break-BreakpointPriority>
-      <DebuggerProperty-OptionalProperty-Break-TimerPeripheralBreak>No</DebuggerProperty-OptionalProperty-Break-TimerPeripheralBreak>
-      <DebuggerProperty-OptionalProperty-Break-SerialPeripheralBreak>No</DebuggerProperty-OptionalProperty-Break-SerialPeripheralBreak>
-      <DebuggerProperty-OptionalProperty-MemoryAccess-PermitToStopAndRead>No</DebuggerProperty-OptionalProperty-MemoryAccess-PermitToStopAndRead>
+      <DebuggerProperty-OptionalProperty-Break-TimerPeripheralBreak>Yes</DebuggerProperty-OptionalProperty-Break-TimerPeripheralBreak>
+      <DebuggerProperty-OptionalProperty-Break-SerialPeripheralBreak>Yes</DebuggerProperty-OptionalProperty-Break-SerialPeripheralBreak>
+      <DebuggerProperty-OptionalProperty-MemoryAccess-PermitToStopAndRead>Yes</DebuggerProperty-OptionalProperty-MemoryAccess-PermitToStopAndRead>
       <DebuggerProperty-OptionalProperty-MemoryAccess-PermitToStopAndSetBreak>No</DebuggerProperty-OptionalProperty-MemoryAccess-PermitToStopAndSetBreak>
       <DebuggerProperty-OptionalProperty-PinMask-TargetResetMask>No</DebuggerProperty-OptionalProperty-PinMask-TargetResetMask>
       <DebuggerProperty-OptionalProperty-PinMask-InternalResetMask>No</DebuggerProperty-OptionalProperty-PinMask-InternalResetMask>
@@ -3805,9 +3905,9 @@ Source\timer
 &lt;/SOAP-ENV:Body&gt;
 &lt;/SOAP-ENV:Envelope&gt;
 </KeyExtGridLayout>
-      <KeyTopViewZoom>1</KeyTopViewZoom>
-      <KeyTopViewAngle>0</KeyTopViewAngle>
-      <KeyTopViewPartsCollapsed>False</KeyTopViewPartsCollapsed>
+      <KeyTopViewZoom />
+      <KeyTopViewAngle />
+      <KeyTopViewPartsCollapsed />
       <KEY_SAVE_ALLOCATED_FUNCTION>True</KEY_SAVE_ALLOCATED_FUNCTION>
       <KEY_SAVE_ALLOCATED_FUNCTION_TERMINAL_NUMBER_COLLECTION>21,22,23,35,36,38,39,40,41,42,43,44,45,46</KEY_SAVE_ALLOCATED_FUNCTION_TERMINAL_NUMBER_COLLECTION>
       <KEY_SAVE_ALLOCATED_FCUNTION_COLLECTION21>21,P31,TI03,TO03,INTP4</KEY_SAVE_ALLOCATED_FCUNTION_COLLECTION21>
@@ -4046,8 +4146,8 @@ Source\timer
       &lt;/Effect&gt;
     &lt;/RTCLPC&gt;
     &lt;VDD Name="VDD" Text="false" Comment="used" /&gt;
-    &lt;AD_ADPC_USEDPIN Name="AD_ADPC_USEDPIN" Text="false" /&gt;
-    &lt;ADC_ADS_VALUE Name="ADC_ADS_VALUE" Text="false" /&gt;
+    &lt;AD_ADPC_USEDPIN Name="AD_ADPC_USEDPIN" Text="" /&gt;
+    &lt;ADC_ADS_VALUE Name="ADC_ADS_VALUE" Text="" /&gt;
     &lt;IIC00 Name="IIC00" Text="false" Comment="unused" Trigger="IIC00"&gt;
       &lt;Effect&gt;
         &lt;PORT Forcible="" /&gt;
@@ -4122,6 +4222,7 @@ Source\timer
     &lt;RAMEndAddress Name="RAMEndAddress" Fixed="" Text="000FFEFF" /&gt;
     &lt;ROMEndAddress Chip="R5F1006E,R5F1007E,R5F1008E,R5F100AE,R5F100BE,R5F100CE,R5F100EE,R5F100FE,R5F100GE,R5F100JE,R5F100LE" Name="ROMEndAddress" Fixed="" Text="0000FFFF" /&gt;
     &lt;MirrorROM Chip="R5F1006E,R5F1007E,R5F1008E,R5F100AE,R5F100BE,R5F100CE,R5F100EE,R5F100FE,R5F100GE,R5F100JE,R5F100LE,R5F1016E,R5F1017E,R5F1018E,R5F101AE,R5F101BE,R5F101CE,R5F101EE,R5F101FE,R5F101GE,R5F101JE,R5F101LE" Name="MirrorROM" Fixed="" Text="51.75" /&gt;
+    &lt;ADPC_AD Name="ADPC_AD" Value="-1" /&gt;
     &lt;CodePath Name="CodePath" Text=".\" /&gt;
     &lt;ReportType Name="ReportType" Text="Html" /&gt;
     &lt;CreationDateType Name="CreationDateType" Text="OutputDate" /&gt;
@@ -4500,7 +4601,7 @@ Source\timer
             &lt;INTTM04 InUse="0" ISR="r_tau0_channel4_interrupt" /&gt;
           &lt;/Channel4&gt;
           &lt;Channel5&gt;
-            &lt;INTTM05 InUse="1" ISR="r_tau0_channel5_interrupt" /&gt;
+            &lt;INTTM05 InUse="0" ISR="r_tau0_channel5_interrupt" /&gt;
           &lt;/Channel5&gt;
           &lt;Channel6&gt;
             &lt;INTTM06 InUse="0" ISR="r_tau0_channel6_interrupt" /&gt;
@@ -4988,27 +5089,27 @@ Source\timer
         &lt;r_cg_serial.h UserName="r_cg_serial.h" LibName=".h" InUse="0" /&gt;
       &lt;/Serial&gt;
       &lt;ADC&gt;
-        &lt;r_cg_adc.c UserName="r_cg_adc.c" LibName=".c" InUse=""&gt;
+        &lt;r_cg_adc.c UserName="r_cg_adc.c" LibName=".c" InUse="0"&gt;
           &lt;Type R_ADC_Create="void R_ADC_Create(void)" R_ADC_Start="void R_ADC_Start(void)" R_ADC_Stop="void R_ADC_Stop(void)" R_ADC_Set_OperationOn="void R_ADC_Set_OperationOn(void)" R_ADC_Set_OperationOff="void R_ADC_Set_OperationOff(void)" R_ADC_Get_Result="void R_ADC_Get_Result(uint16_t * const buffer)" R_ADC_Get_Result_8bit="void R_ADC_Get_Result_8bit(uint8_t * const buffer)" R_ADC_Set_ADChannel="MD_STATUS R_ADC_Set_ADChannel(ad_channel_t channel)" R_ADC_Set_SnoozeOn="void R_ADC_Set_SnoozeOn(void)" R_ADC_Set_SnoozeOff="void R_ADC_Set_SnoozeOff(void)" R_ADC_Set_TestChannel="MD_STATUS R_ADC_Set_TestChannel(test_channel_t channel)" R_ADC_Set_PowerOff="void R_ADC_Set_PowerOff(void)" /&gt;
-          &lt;R_ADC_Create UserName="R_ADC_Create" LibName="R_ADC_Create" InUse="" Init="1" InitMode="" /&gt;
-          &lt;R_ADC_Start UserName="R_ADC_Start" LibName="R_ADC_Start" InUse="" /&gt;
-          &lt;R_ADC_Stop UserName="R_ADC_Stop" LibName="R_ADC_Stop" InUse="" /&gt;
-          &lt;R_ADC_Set_OperationOn UserName="R_ADC_Set_OperationOn" LibName="R_ADC_Set_OperationOn" InUse="" /&gt;
-          &lt;R_ADC_Set_OperationOff UserName="R_ADC_Set_OperationOff" LibName="R_ADC_Set_OperationOff" InUse="" /&gt;
-          &lt;R_ADC_Get_Result UserName="R_ADC_Get_Result" LibName="R_ADC_Get_Result" InUse="" /&gt;
-          &lt;R_ADC_Get_Result_8bit UserName="R_ADC_Get_Result_8bit" LibName="R_ADC_Get_Result_8bit" InUse="" /&gt;
-          &lt;R_ADC_Set_ADChannel UserName="R_ADC_Set_ADChannel" LibName="R_ADC_Set_ADChannel" InUse="" /&gt;
-          &lt;R_ADC_Set_SnoozeOn UserName="R_ADC_Set_SnoozeOn" LibName="R_ADC_Set_SnoozeOn" InUse="" /&gt;
-          &lt;R_ADC_Set_SnoozeOff UserName="R_ADC_Set_SnoozeOff" LibName="R_ADC_Set_SnoozeOff" InUse="" /&gt;
-          &lt;R_ADC_Set_TestChannel UserName="R_ADC_Set_TestChannel" LibName="R_ADC_Set_TestChannel" InUse="" /&gt;
-          &lt;R_ADC_Set_PowerOff UserName="R_ADC_Set_PowerOff" LibName="R_ADC_Set_PowerOff" InUse="" /&gt;
+          &lt;R_ADC_Create UserName="R_ADC_Create" LibName="R_ADC_Create" InUse="0" Init="1" InitMode="" /&gt;
+          &lt;R_ADC_Start UserName="R_ADC_Start" LibName="R_ADC_Start" InUse="0" /&gt;
+          &lt;R_ADC_Stop UserName="R_ADC_Stop" LibName="R_ADC_Stop" InUse="0" /&gt;
+          &lt;R_ADC_Set_OperationOn UserName="R_ADC_Set_OperationOn" LibName="R_ADC_Set_OperationOn" InUse="0" /&gt;
+          &lt;R_ADC_Set_OperationOff UserName="R_ADC_Set_OperationOff" LibName="R_ADC_Set_OperationOff" InUse="0" /&gt;
+          &lt;R_ADC_Get_Result UserName="R_ADC_Get_Result" LibName="R_ADC_Get_Result" InUse="0" /&gt;
+          &lt;R_ADC_Get_Result_8bit UserName="R_ADC_Get_Result_8bit" LibName="R_ADC_Get_Result_8bit" InUse="0" /&gt;
+          &lt;R_ADC_Set_ADChannel UserName="R_ADC_Set_ADChannel" LibName="R_ADC_Set_ADChannel" InUse="0" /&gt;
+          &lt;R_ADC_Set_SnoozeOn UserName="R_ADC_Set_SnoozeOn" LibName="R_ADC_Set_SnoozeOn" InUse="0" /&gt;
+          &lt;R_ADC_Set_SnoozeOff UserName="R_ADC_Set_SnoozeOff" LibName="R_ADC_Set_SnoozeOff" InUse="0" /&gt;
+          &lt;R_ADC_Set_TestChannel UserName="R_ADC_Set_TestChannel" LibName="R_ADC_Set_TestChannel" InUse="0" /&gt;
+          &lt;R_ADC_Set_PowerOff UserName="R_ADC_Set_PowerOff" LibName="R_ADC_Set_PowerOff" InUse="0" /&gt;
         &lt;/r_cg_adc.c&gt;
-        &lt;r_cg_adc_user.c UserName="r_cg_adc_user.c" LibName="_user.c" InUse=""&gt;
+        &lt;r_cg_adc_user.c UserName="r_cg_adc_user.c" LibName="_user.c" InUse="0"&gt;
           &lt;Type R_ADC_Create_UserInit="void R_ADC_Create_UserInit(void)" r_adc_interrupt="__interrupt static void r_adc_interrupt(void)" /&gt;
-          &lt;R_ADC_Create_UserInit UserName="R_ADC_Create_UserInit" LibName="R_ADC_Create_UserInit" InUse="" /&gt;
-          &lt;r_adc_interrupt UserName="r_adc_interrupt" INTHandle="" LibName="r_adc_interrupt" InUse="" /&gt;
+          &lt;R_ADC_Create_UserInit UserName="R_ADC_Create_UserInit" LibName="R_ADC_Create_UserInit" InUse="0" /&gt;
+          &lt;r_adc_interrupt UserName="r_adc_interrupt" INTHandle="" LibName="r_adc_interrupt" InUse="0" /&gt;
         &lt;/r_cg_adc_user.c&gt;
-        &lt;r_cg_adc.h UserName="r_cg_adc.h" LibName=".h" InUse="" /&gt;
+        &lt;r_cg_adc.h UserName="r_cg_adc.h" LibName=".h" InUse="0" /&gt;
       &lt;/ADC&gt;
       &lt;TAU&gt;
         &lt;r_cg_timer.c UserName="r_cg_timer.c" LibName=".c" InUse="1"&gt;
@@ -5092,7 +5193,7 @@ Source\timer
               &lt;r_tau0_channel4_interrupt UserName="r_tau0_channel4_interrupt" INTHandle="" LibName="r_tau_channeln_interrupt" InUse="0" /&gt;
             &lt;/Channel4&gt;
             &lt;Channel5 InUse=""&gt;
-              &lt;r_tau0_channel5_interrupt UserName="r_tau0_channel5_interrupt" INTHandle="" LibName="r_tau_channeln_interrupt" InUse="1" /&gt;
+              &lt;r_tau0_channel5_interrupt UserName="r_tau0_channel5_interrupt" INTHandle="" LibName="r_tau_channeln_interrupt" InUse="0" /&gt;
             &lt;/Channel5&gt;
             &lt;Channel6 InUse=""&gt;
               &lt;r_tau0_channel6_interrupt UserName="r_tau0_channel6_interrupt" INTHandle="" LibName="r_tau_channeln_interrupt" InUse="0" /&gt;
@@ -5118,55 +5219,55 @@ Source\timer
         &lt;r_cg_wdt.h UserName="r_cg_wdt.h" LibName=".h" InUse="1" /&gt;
       &lt;/WDT&gt;
       &lt;RTC&gt;
-        &lt;r_cg_rtc.c UserName="r_cg_rtc.c" LibName=".c" InUse=""&gt;
+        &lt;r_cg_rtc.c UserName="r_cg_rtc.c" LibName=".c" InUse="0"&gt;
           &lt;Type R_RTC_Create="void R_RTC_Create(void)" R_RTC_Start="void R_RTC_Start(void)" R_RTC_Stop="void R_RTC_Stop(void)" R_RTC_Set_HourSystem="MD_STATUS R_RTC_SetHourSystem(rtc_hour_system_t hour_system)" R_RTC_Get_CounterValue="MD_STATUS R_RTC_Get_CounterValue(rtc_counter_value_t * const counter_read_val)" R_RTC_Set_CounterValue="MD_STATUS R_RTC_Set_CounterValue(rtc_counter_value_t counter_write_val)" R_RTC_Set_AlarmOn="void R_RTC_Set_AlarmOn(void)" R_RTC_Set_AlarmOff="void R_RTC_Set_AlarmOff(void)" R_RTC_Set_AlarmValue="void R_RTC_Set_AlarmValue(rtc_alarm_value_t alarm_val)" R_RTC_Get_AlarmValue="void R_RTC_Get_AlarmValue(rtc_alarm_value_t * const alarm_val)" R_RTC_Set_ConstPeriodInterruptOn="MD_STATUS R_RTC_Set_ConstPeriodInterruptOn(rtc_int_period_t period)" R_RTC_Set_ConstPeriodInterruptOff="void R_RTC_Set_ConstPeriodInterruptOff(void)" R_RTC_Set_RTC1HZOn="void R_RTC_Set_RTC1HZOn(void)" R_RTC_Set_RTC1HZOff="void R_RTC_Set_RTC1HZOff(void)" R_RTC_Set_PowerOff="void R_RTC_Set_PowerOff(void)" /&gt;
-          &lt;R_RTC_Create UserName="R_RTC_Create" LibName="R_RTC_Create" InUse="" Init="1" InitMode="" /&gt;
-          &lt;R_RTC_Start UserName="R_RTC_Start" LibName="R_RTC_Start" InUse="" /&gt;
-          &lt;R_RTC_Stop UserName="R_RTC_Stop" LibName="R_RTC_Stop" InUse="" /&gt;
-          &lt;R_RTC_Set_HourSystem Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_HourSystem" LibName="R_RTC_Set_HourSystem" InUse="" /&gt;
-          &lt;R_RTC_Get_CounterValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Get_CounterValue" LibName="R_RTC_Get_CounterValue" InUse="" /&gt;
-          &lt;R_RTC_Set_CounterValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_CounterValue" LibName="R_RTC_Set_CounterValue" InUse="" /&gt;
-          &lt;R_RTC_Set_AlarmOn Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_AlarmOn" LibName="R_RTC_Set_AlarmOn" InUse="" /&gt;
-          &lt;R_RTC_Set_AlarmOff Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_AlarmOff" LibName="R_RTC_Set_AlarmOff" InUse="" /&gt;
-          &lt;R_RTC_Set_AlarmValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_AlarmValue" LibName="R_RTC_Set_AlarmValue" InUse="" /&gt;
-          &lt;R_RTC_Get_AlarmValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Get_AlarmValue" LibName="R_RTC_Get_AlarmValue" InUse="" /&gt;
-          &lt;R_RTC_Set_ConstPeriodInterruptOn UserName="R_RTC_Set_ConstPeriodInterruptOn" LibName="R_RTC_Set_ConstPeriodInterruptOn" InUse="" /&gt;
-          &lt;R_RTC_Set_ConstPeriodInterruptOff UserName="R_RTC_Set_ConstPeriodInterruptOff" LibName="R_RTC_Set_ConstPeriodInterruptOff" InUse="" /&gt;
-          &lt;R_RTC_Set_RTC1HZOn Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_RTC1HZOn" LibName="R_RTC_Set_RTC1HZOn" InUse="" /&gt;
-          &lt;R_RTC_Set_RTC1HZOff Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_RTC1HZOff" LibName="R_RTC_Set_RTC1HZOff" InUse="" /&gt;
-          &lt;R_RTC_Set_PowerOff UserName="R_RTC_Set_PowerOff" LibName="R_RTC_Set_PowerOff" InUse="" /&gt;
+          &lt;R_RTC_Create UserName="R_RTC_Create" LibName="R_RTC_Create" InUse="0" Init="1" InitMode="" /&gt;
+          &lt;R_RTC_Start UserName="R_RTC_Start" LibName="R_RTC_Start" InUse="0" /&gt;
+          &lt;R_RTC_Stop UserName="R_RTC_Stop" LibName="R_RTC_Stop" InUse="0" /&gt;
+          &lt;R_RTC_Set_HourSystem Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_HourSystem" LibName="R_RTC_Set_HourSystem" InUse="0" /&gt;
+          &lt;R_RTC_Get_CounterValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Get_CounterValue" LibName="R_RTC_Get_CounterValue" InUse="0" /&gt;
+          &lt;R_RTC_Set_CounterValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_CounterValue" LibName="R_RTC_Set_CounterValue" InUse="0" /&gt;
+          &lt;R_RTC_Set_AlarmOn Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_AlarmOn" LibName="R_RTC_Set_AlarmOn" InUse="0" /&gt;
+          &lt;R_RTC_Set_AlarmOff Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_AlarmOff" LibName="R_RTC_Set_AlarmOff" InUse="0" /&gt;
+          &lt;R_RTC_Set_AlarmValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_AlarmValue" LibName="R_RTC_Set_AlarmValue" InUse="0" /&gt;
+          &lt;R_RTC_Get_AlarmValue Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Get_AlarmValue" LibName="R_RTC_Get_AlarmValue" InUse="0" /&gt;
+          &lt;R_RTC_Set_ConstPeriodInterruptOn UserName="R_RTC_Set_ConstPeriodInterruptOn" LibName="R_RTC_Set_ConstPeriodInterruptOn" InUse="0" /&gt;
+          &lt;R_RTC_Set_ConstPeriodInterruptOff UserName="R_RTC_Set_ConstPeriodInterruptOff" LibName="R_RTC_Set_ConstPeriodInterruptOff" InUse="0" /&gt;
+          &lt;R_RTC_Set_RTC1HZOn Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_RTC1HZOn" LibName="R_RTC_Set_RTC1HZOn" InUse="0" /&gt;
+          &lt;R_RTC_Set_RTC1HZOff Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="R_RTC_Set_RTC1HZOff" LibName="R_RTC_Set_RTC1HZOff" InUse="0" /&gt;
+          &lt;R_RTC_Set_PowerOff UserName="R_RTC_Set_PowerOff" LibName="R_RTC_Set_PowerOff" InUse="0" /&gt;
         &lt;/r_cg_rtc.c&gt;
-        &lt;r_cg_rtc_user.c UserName="r_cg_rtc_user.c" LibName="_user.c" InUse=""&gt;
+        &lt;r_cg_rtc_user.c UserName="r_cg_rtc_user.c" LibName="_user.c" InUse="0"&gt;
           &lt;Type R_RTC_Create_UserInit="void R_RTC_Create_UserInit(void)" r_rtc_interrupt="__interrupt static void r_rtc_interrupt(void)" r_rtc_callback_constperiod="void r_rtc_callback_constperiod(void)" r_rtc_callback_alarm="void r_rtc_callback_alarm(void)" /&gt;
-          &lt;R_RTC_Create_UserInit UserName="R_RTC_Create_UserInit" LibName="R_RTC_Create_UserInit" InUse="" /&gt;
-          &lt;r_rtc_interrupt UserName="r_rtc_interrupt" INTHandle="" LibName="r_rtc_interrupt" InUse="" /&gt;
-          &lt;r_rtc_callback_constperiod UserName="r_rtc_callback_constperiod" LibName="r_rtc_callback_constperiod" InUse="" /&gt;
-          &lt;r_rtc_callback_alarm Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="r_rtc_callback_alarm" LibName="r_rtc_callback_alarm" InUse="" /&gt;
+          &lt;R_RTC_Create_UserInit UserName="R_RTC_Create_UserInit" LibName="R_RTC_Create_UserInit" InUse="0" /&gt;
+          &lt;r_rtc_interrupt UserName="r_rtc_interrupt" INTHandle="" LibName="r_rtc_interrupt" InUse="0" /&gt;
+          &lt;r_rtc_callback_constperiod UserName="r_rtc_callback_constperiod" LibName="r_rtc_callback_constperiod" InUse="0" /&gt;
+          &lt;r_rtc_callback_alarm Chip="RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" UserName="r_rtc_callback_alarm" LibName="r_rtc_callback_alarm" InUse="0" /&gt;
         &lt;/r_cg_rtc_user.c&gt;
-        &lt;r_cg_rtc.h UserName="r_cg_rtc.h" LibName=".h" InUse="" /&gt;
+        &lt;r_cg_rtc.h UserName="r_cg_rtc.h" LibName=".h" InUse="0" /&gt;
       &lt;/RTC&gt;
       &lt;IT&gt;
-        &lt;r_cg_it.c UserName="r_cg_it.c" LibName=".c" InUse=""&gt;
+        &lt;r_cg_it.c UserName="r_cg_it.c" LibName=".c" InUse="0"&gt;
           &lt;Type R_IT_Create="void R_IT_Create(void)" R_IT_Start="void R_IT_Start(void)" R_IT_Stop="void R_IT_Stop(void)" R_IT_Set_PowerOff="void R_IT_Set_PowerOff(void)" /&gt;
-          &lt;R_IT_Create UserName="R_IT_Create" LibName="R_IT_Create" InUse="" Init="1" InitMode="" /&gt;
-          &lt;R_IT_Start UserName="R_IT_Start" LibName="R_IT_Start" InUse="" /&gt;
-          &lt;R_IT_Stop UserName="R_IT_Stop" LibName="R_IT_Stop" InUse="" /&gt;
-          &lt;R_IT_Set_PowerOff UserName="R_IT_Set_PowerOff" LibName="R_IT_Set_PowerOff" InUse="" /&gt;
+          &lt;R_IT_Create UserName="R_IT_Create" LibName="R_IT_Create" InUse="0" Init="1" InitMode="" /&gt;
+          &lt;R_IT_Start UserName="R_IT_Start" LibName="R_IT_Start" InUse="0" /&gt;
+          &lt;R_IT_Stop UserName="R_IT_Stop" LibName="R_IT_Stop" InUse="0" /&gt;
+          &lt;R_IT_Set_PowerOff UserName="R_IT_Set_PowerOff" LibName="R_IT_Set_PowerOff" InUse="0" /&gt;
         &lt;/r_cg_it.c&gt;
-        &lt;r_cg_it_user.c UserName="r_cg_it_user.c" LibName="_user.c" InUse=""&gt;
+        &lt;r_cg_it_user.c UserName="r_cg_it_user.c" LibName="_user.c" InUse="0"&gt;
           &lt;Type R_IT_Create_UserInit="void R_IT_Create_UserInit(void)" r_it_interrupt="__interrupt static void r_it_interrupt(void)" /&gt;
-          &lt;R_IT_Create_UserInit UserName="R_IT_Create_UserInit" LibName="R_IT_Create_UserInit" InUse="" /&gt;
-          &lt;r_it_interrupt UserName="r_it_interrupt" INTHandle="" LibName="r_it_interrupt" InUse="" /&gt;
+          &lt;R_IT_Create_UserInit UserName="R_IT_Create_UserInit" LibName="R_IT_Create_UserInit" InUse="0" /&gt;
+          &lt;r_it_interrupt UserName="r_it_interrupt" INTHandle="" LibName="r_it_interrupt" InUse="0" /&gt;
         &lt;/r_cg_it_user.c&gt;
-        &lt;r_cg_it.h UserName="r_cg_it.h" LibName=".h" InUse="" /&gt;
+        &lt;r_cg_it.h UserName="r_cg_it.h" LibName=".h" InUse="0" /&gt;
       &lt;/IT&gt;
       &lt;PCLBUZ Chip="RL78G13_24pin,RL78G13_25pin,RL78G13_30pin,RL78G13_32pin,RL78G13_36pin,RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin"&gt;
-        &lt;r_cg_pclbuz.c UserName="r_cg_pclbuz.c" LibName=".c" InUse=""&gt;
+        &lt;r_cg_pclbuz.c UserName="r_cg_pclbuz.c" LibName=".c" InUse="0"&gt;
           &lt;Type R_PCLBUZn_Create="void R_PCLBUZn_Create(void) " R_PCLBUZn_Start="void R_PCLBUZn_Start(void)" R_PCLBUZn_Stop="void R_PCLBUZn_Stop(void)" /&gt;
           &lt;PCLBUZ0 InUse=""&gt;
-            &lt;R_PCLBUZ0_Create UserName="R_PCLBUZ0_Create" LibName="R_PCLBUZn_Create" InUse="" Init="1" InitMode="" /&gt;
-            &lt;R_PCLBUZ0_Start UserName="R_PCLBUZ0_Start" LibName="R_PCLBUZn_Start" InUse="" /&gt;
-            &lt;R_PCLBUZ0_Stop UserName="R_PCLBUZ0_Stop" LibName="R_PCLBUZn_Stop" InUse="" /&gt;
+            &lt;R_PCLBUZ0_Create UserName="R_PCLBUZ0_Create" LibName="R_PCLBUZn_Create" InUse="0" Init="1" InitMode="" /&gt;
+            &lt;R_PCLBUZ0_Start UserName="R_PCLBUZ0_Start" LibName="R_PCLBUZn_Start" InUse="0" /&gt;
+            &lt;R_PCLBUZ0_Stop UserName="R_PCLBUZ0_Stop" LibName="R_PCLBUZn_Stop" InUse="0" /&gt;
           &lt;/PCLBUZ0&gt;
           &lt;PCLBUZ1 Chip="RL78G13_30pin,RL78G13_32pin,RL78G13_36pin,RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" InUse=""&gt;
             &lt;R_PCLBUZ1_Create UserName="R_PCLBUZ1_Create" LibName="R_PCLBUZn_Create" InUse="" Init="1" InitMode="" /&gt;
@@ -5174,25 +5275,25 @@ Source\timer
             &lt;R_PCLBUZ1_Stop UserName="R_PCLBUZ1_Stop" LibName="R_PCLBUZn_Stop" InUse="" /&gt;
           &lt;/PCLBUZ1&gt;
         &lt;/r_cg_pclbuz.c&gt;
-        &lt;r_cg_pclbuz_user.c UserName="r_cg_pclbuz_user.c" LibName="_user.c" InUse=""&gt;
+        &lt;r_cg_pclbuz_user.c UserName="r_cg_pclbuz_user.c" LibName="_user.c" InUse="0"&gt;
           &lt;Type R_PCLBUZn_Create_UserInit="void R_PCLBUZn_Create_UserInit(void) " /&gt;
           &lt;PCLBUZ0 InUse=""&gt;
-            &lt;R_PCLBUZ0_Create_UserInit UserName="R_PCLBUZ0_Create_UserInit" LibName="R_PCLBUZn_Create_UserInit" InUse="" Init="1" /&gt;
+            &lt;R_PCLBUZ0_Create_UserInit UserName="R_PCLBUZ0_Create_UserInit" LibName="R_PCLBUZn_Create_UserInit" InUse="0" Init="1" /&gt;
           &lt;/PCLBUZ0&gt;
           &lt;PCLBUZ1 Chip="RL78G13_30pin,RL78G13_32pin,RL78G13_36pin,RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" InUse=""&gt;
             &lt;R_PCLBUZ1_Create_UserInit UserName="R_PCLBUZ1_Create_UserInit" LibName="R_PCLBUZn_Create_UserInit" InUse="" Init="1" /&gt;
           &lt;/PCLBUZ1&gt;
         &lt;/r_cg_pclbuz_user.c&gt;
-        &lt;r_cg_pclbuz.h UserName="r_cg_pclbuz.h" LibName=".h" InUse="" /&gt;
+        &lt;r_cg_pclbuz.h UserName="r_cg_pclbuz.h" LibName=".h" InUse="0" /&gt;
       &lt;/PCLBUZ&gt;
       &lt;DMAC&gt;
-        &lt;r_cg_dmac.c UserName="r_cg_dmac.c" LibName=".c" InUse=""&gt;
+        &lt;r_cg_dmac.c UserName="r_cg_dmac.c" LibName=".c" InUse="0"&gt;
           &lt;Type R_DMACn_Create="void R_DMACn_Create(void)" R_DMACn_Start="void R_DMACn_Start(void)" R_DMACn_Stop="void R_DMACn_Stop(void)" R_DMACn_Set_SoftwareTriggerOn="void R_DMACn_Set_SoftwareTriggerOn(void)" /&gt;
           &lt;DMA0 InUse=""&gt;
-            &lt;R_DMAC0_Create UserName="R_DMAC0_Create" LibName="R_DMACn_Create" InUse="" Init="1" InitMode="" /&gt;
-            &lt;R_DMAC0_Start UserName="R_DMAC0_Start" LibName="R_DMACn_Start" InUse="" /&gt;
-            &lt;R_DMAC0_Stop UserName="R_DMAC0_Stop" LibName="R_DMACn_Stop" InUse="" /&gt;
-            &lt;R_DMAC0_Set_SoftwareTriggerOn UserName="R_DMAC0_Set_SoftwareTriggerOn" LibName="R_DMACn_Set_SoftwareTriggerOn" InUse="" /&gt;
+            &lt;R_DMAC0_Create UserName="R_DMAC0_Create" LibName="R_DMACn_Create" InUse="0" Init="1" InitMode="" /&gt;
+            &lt;R_DMAC0_Start UserName="R_DMAC0_Start" LibName="R_DMACn_Start" InUse="0" /&gt;
+            &lt;R_DMAC0_Stop UserName="R_DMAC0_Stop" LibName="R_DMACn_Stop" InUse="0" /&gt;
+            &lt;R_DMAC0_Set_SoftwareTriggerOn UserName="R_DMAC0_Set_SoftwareTriggerOn" LibName="R_DMACn_Set_SoftwareTriggerOn" InUse="0" /&gt;
           &lt;/DMA0&gt;
           &lt;DMA1 InUse=""&gt;
             &lt;R_DMAC1_Create UserName="R_DMAC1_Create" LibName="R_DMACn_Create" InUse="" Init="1" InitMode="" /&gt;
@@ -5201,18 +5302,18 @@ Source\timer
             &lt;R_DMAC1_Set_SoftwareTriggerOn UserName="R_DMAC1_Set_SoftwareTriggerOn" LibName="R_DMACn_Set_SoftwareTriggerOn" InUse="" /&gt;
           &lt;/DMA1&gt;
         &lt;/r_cg_dmac.c&gt;
-        &lt;r_cg_dmac_user.c UserName="r_cg_dmac_user.c" LibName="_user.c" InUse=""&gt;
+        &lt;r_cg_dmac_user.c UserName="r_cg_dmac_user.c" LibName="_user.c" InUse="0"&gt;
           &lt;Type R_DMACn_Create_UserInit="void R_DMACn_Create_UserInit(void)" r_dmacn_interrupt="__interrupt static void r_dmacn_interrupt(void)" /&gt;
           &lt;DMA0&gt;
-            &lt;R_DMAC0_Create_UserInit UserName="R_DMAC0_Create_UserInit" LibName="R_DMACn_Create_UserInit" InUse="" /&gt;
-            &lt;r_dmac0_interrupt UserName="r_dmac0_interrupt" INTHandle="" LibName="r_dmacn_interrupt" InUse="" /&gt;
+            &lt;R_DMAC0_Create_UserInit UserName="R_DMAC0_Create_UserInit" LibName="R_DMACn_Create_UserInit" InUse="0" /&gt;
+            &lt;r_dmac0_interrupt UserName="r_dmac0_interrupt" INTHandle="" LibName="r_dmacn_interrupt" InUse="0" /&gt;
           &lt;/DMA0&gt;
           &lt;DMA1&gt;
             &lt;R_DMAC1_Create_UserInit UserName="R_DMAC1_Create_UserInit" LibName="R_DMACn_Create_UserInit" InUse="" /&gt;
             &lt;r_dmac1_interrupt UserName="r_dmac1_interrupt" INTHandle="" LibName="r_dmacn_interrupt" InUse="" /&gt;
           &lt;/DMA1&gt;
         &lt;/r_cg_dmac_user.c&gt;
-        &lt;r_cg_dmac.h UserName="r_cg_dmac.h" LibName=".h" InUse="" /&gt;
+        &lt;r_cg_dmac.h UserName="r_cg_dmac.h" LibName=".h" InUse="0" /&gt;
       &lt;/DMAC&gt;
       &lt;LVD&gt;
         &lt;r_cg_lvd.c UserName="r_cg_lvd.c" LibName=".c" InUse="0"&gt;
@@ -5230,16 +5331,16 @@ Source\timer
     &lt;/FUNC&gt;
     &lt;TAG&gt;
       &lt;GlobleUserTag&gt;
+        &lt;cg_security4 Name="cg_security4" Value="00" /&gt;
         &lt;cg_security9 Name="cg_security9" Value="00" /&gt;
         &lt;cg_security7 Name="cg_security7" Value="00" /&gt;
         &lt;cg_security5 Name="cg_security5" Value="00" /&gt;
         &lt;cg_crc_area Name="cg_crc_area" Value="00" /&gt;
-        &lt;rrm Name="rrm" Value="0FE00" /&gt;
         &lt;cg_security3 Name="cg_security3" Value="00" /&gt;
         &lt;cg_security0 Name="cg_security0" Value="00" /&gt;
         &lt;cg_security1 Name="cg_security1" Value="00" /&gt;
+        &lt;cg_ocd_ram_size Name="cg_ocd_ram_size" Value="512" /&gt;
         &lt;clock_option Name="clock_option" Value="E8" /&gt;
-        &lt;lvi_option Name="lvi_option" Value="73" /&gt;
         &lt;pior_value Name="pior_value" Value="00" /&gt;
         &lt;cg_option Name="cg_option" Value="84" /&gt;
         &lt;cg_security8 Name="cg_security8" Value="00" /&gt;
@@ -5248,9 +5349,9 @@ Source\timer
         &lt;cg_onchip Name="cg_onchip" Value="" /&gt;
         &lt;cg_security2 Name="cg_security2" Value="00" /&gt;
         &lt;cg_iawctl_value Name="cg_iawctl_value" Value="00" /&gt;
-        &lt;cg_ocd_ram_size Name="cg_ocd_ram_size" Value="512" /&gt;
+        &lt;lvi_option Name="lvi_option" Value="73" /&gt;
         &lt;wdt_option Name="wdt_option" Value="7D" /&gt;
-        &lt;cg_security4 Name="cg_security4" Value="00" /&gt;
+        &lt;rrm Name="rrm" Value="0FE00" /&gt;
       &lt;/GlobleUserTag&gt;
     &lt;/TAG&gt;
   &lt;/DIR&gt;
@@ -5278,8 +5379,8 @@ Source\timer
       &lt;/SAU1&gt;
       &lt;IICA0 Accelerate="No" Chip="RL78G13_24pin,RL78G13_25pin,RL78G13_30pin,RL78G13_32pin,RL78G13_36pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" MacroName="IICA" Channel="0" TabEnable="True" /&gt;
     &lt;/Serial&gt;
-    &lt;ADC SetFlag="" HelpID="adc" NeedRefresh="False"&gt;
-      &lt;ADC SetFlag="" MacroName="ADC" /&gt;
+    &lt;ADC SetFlag="False" HelpID="adc" NeedRefresh="False"&gt;
+      &lt;ADC SetFlag="False" MacroName="ADC" /&gt;
     &lt;/ADC&gt;
     &lt;TAU SetFlag="True" HelpID="timer" NeedRefresh="False"&gt;
       &lt;TAU0 Accelerate="No" MacroName="TAU" Channel="0" ChannelNum="0,1,2,3,4,5,6,7" SetFlag="True" /&gt;
@@ -5287,18 +5388,18 @@ Source\timer
     &lt;WDT Prepared="true" SetFlag="True" HelpID="watchdogtimer" NeedRefresh="False"&gt;
       &lt;WDT SetFlag="True" MacroName="WDT" /&gt;
     &lt;/WDT&gt;
-    &lt;RTC SetFlag="" HelpID="rtc" NeedRefresh="False"&gt;
-      &lt;RTC MacroName="RTC" /&gt;
+    &lt;RTC SetFlag="False" HelpID="rtc" NeedRefresh="False"&gt;
+      &lt;RTC MacroName="RTC" SetFlag="False" /&gt;
     &lt;/RTC&gt;
-    &lt;IT SetFlag="" HelpID="intervaltimer" NeedRefresh="False"&gt;
-      &lt;IT MacroName="IntervalTM" /&gt;
+    &lt;IT SetFlag="False" HelpID="intervaltimer" NeedRefresh="False"&gt;
+      &lt;IT MacroName="IntervalTM" SetFlag="False" /&gt;
     &lt;/IT&gt;
-    &lt;PCLBUZ Chip="RL78G13_24pin,RL78G13_25pin,RL78G13_30pin,RL78G13_32pin,RL78G13_36pin,RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" SetFlag="" HelpID="PCLBUZ" NeedRefresh="False"&gt;
-      &lt;PCLBUZ0 MacroName="PCLBUZ" Channel="0" TabEnable="True" /&gt;
+    &lt;PCLBUZ Chip="RL78G13_24pin,RL78G13_25pin,RL78G13_30pin,RL78G13_32pin,RL78G13_36pin,RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" SetFlag="False" HelpID="PCLBUZ" NeedRefresh="False"&gt;
+      &lt;PCLBUZ0 MacroName="PCLBUZ" Channel="0" SetFlag="False" TabEnable="True" /&gt;
       &lt;PCLBUZ1 Chip="RL78G13_30pin,RL78G13_32pin,RL78G13_36pin,RL78G13_38pin,RL78G13_40pin,RL78G13_44pin,RL78G13_48pin,RL78G13_52pin,RL78G13_64pin,RL78G13_80pin,RL78G13_100pin,RL78G13_128pin" MacroName="PCLBUZ" Channel="1" TabEnable="True" /&gt;
     &lt;/PCLBUZ&gt;
-    &lt;DMAC HelpID="dmac" SetFlag="" NeedRefresh="False"&gt;
-      &lt;DMA0 MacroName="DMAC" Channel="0" TabEnable="True" /&gt;
+    &lt;DMAC HelpID="dmac" SetFlag="False" NeedRefresh="False"&gt;
+      &lt;DMA0 MacroName="DMAC" Channel="0" SetFlag="False" TabEnable="True" /&gt;
       &lt;DMA1 MacroName="DMAC" Channel="1" TabEnable="True" /&gt;
     &lt;/DMAC&gt;
     &lt;LVD SetFlag="True" Prepared="true" NeedRefresh="False"&gt;
@@ -5354,8 +5455,8 @@ Source\timer
       &lt;setting name="DataFlash" value="unused" /&gt;
       &lt;setting name="ProgramFlash" value="unused" /&gt;
       &lt;setting name="Monitor" value="unused" /&gt;
-      &lt;setting name="StartStop" value="unused" /&gt;
-      &lt;setting name="Emulator" value="E2L" /&gt;
+      &lt;setting name="StartStop" value="used" /&gt;
+      &lt;setting name="Emulator" value="E1" /&gt;
     &lt;/CGC&gt;
     &lt;WDT&gt;
       &lt;setting name="Operation" value="used" /&gt;
@@ -5478,7 +5579,7 @@ Source\timer
           &lt;setting name="Intervalvalue_Low8bits_Scale" value="-1" /&gt;
           &lt;setting name="Generate_interrupt_when_couting_started" value="no" /&gt;
           &lt;setting name="Interrupt" value="used" /&gt;
-          &lt;setting name="Interrupt_priority" value="3" /&gt;
+          &lt;setting name="Interrupt_priority" value="2" /&gt;
           &lt;setting name="InterruptH_priority" value="3" /&gt;
           &lt;setting name="InterruptH8" value="unused" /&gt;
         &lt;/TAUInterval0&gt;
@@ -5490,7 +5591,7 @@ Source\timer
           &lt;setting name="OperationMode" value="16bits" /&gt;
           &lt;setting name="Count_clock" value="MCK clock" /&gt;
           &lt;setting name="Sub_clock_mode" value="-1" /&gt;
-          &lt;setting name="Interval_value" value="800" /&gt;
+          &lt;setting name="Interval_value" value="700" /&gt;
           &lt;setting name="Value_scale" value="1" /&gt;
           &lt;setting name="Intervalvalue_High8bits" value="100" /&gt;
           &lt;setting name="Intervalvalue_High8bits_scale" value="1" /&gt;
@@ -5510,8 +5611,8 @@ Source\timer
           &lt;setting name="OperationMode" value="16bits" /&gt;
           &lt;setting name="Count_clock" value="MCK clock" /&gt;
           &lt;setting name="Sub_clock_mode" value="-1" /&gt;
-          &lt;setting name="Interval_value" value="100" /&gt;
-          &lt;setting name="Value_scale" value="1" /&gt;
+          &lt;setting name="Interval_value" value="1" /&gt;
+          &lt;setting name="Value_scale" value="0" /&gt;
           &lt;setting name="Intervalvalue_High8bits" value="100" /&gt;
           &lt;setting name="Intervalvalue_High8bits_scale" value="-1" /&gt;
           &lt;setting name="Intervalvalue_Low8bits" value="100" /&gt;
@@ -5544,16 +5645,16 @@ Source\timer
         &lt;TAUPWMMaster4&gt;
           &lt;PWMMaster4&gt;
             &lt;setting name="Value_scale" value="1" /&gt;
-            &lt;setting name="PWM_cycle" value="100" /&gt;
+            &lt;setting name="PWM_cycle" value="50" /&gt;
             &lt;setting name="Master_interrupt_priority" value="3" /&gt;
             &lt;setting name="Master_interrupt" value="unused" /&gt;
           &lt;/PWMMaster4&gt;
           &lt;PWMSlave5&gt;
             &lt;setting name="PWM_duty" value="20" /&gt;
-            &lt;setting name="OuputLevel" value="0" /&gt;
+            &lt;setting name="OuputLevel" value="1" /&gt;
             &lt;setting name="OuputValue" value="1" /&gt;
             &lt;setting name="Slave_interrupt_priority" value="3" /&gt;
-            &lt;setting name="Slave_interrupt" value="used" /&gt;
+            &lt;setting name="Slave_interrupt" value="unused" /&gt;
           &lt;/PWMSlave5&gt;
           &lt;PWMSlave6&gt;
             &lt;setting name="PWM_duty" value="50" /&gt;
@@ -5607,10 +5708,42 @@ Source\timer
       &lt;Channel6&gt;
         &lt;setting name="ChannelFunction" value="0" /&gt;
         &lt;setting name="Pinselection" value="-1" /&gt;
+        &lt;TAUInterval6&gt;
+          &lt;setting name="OperationMode" value="16bits" /&gt;
+          &lt;setting name="Count_clock" value="MCK clock" /&gt;
+          &lt;setting name="Sub_clock_mode" value="-1" /&gt;
+          &lt;setting name="Interval_value" value="100" /&gt;
+          &lt;setting name="Value_scale" value="1" /&gt;
+          &lt;setting name="Intervalvalue_High8bits" value="100" /&gt;
+          &lt;setting name="Intervalvalue_High8bits_scale" value="-1" /&gt;
+          &lt;setting name="Intervalvalue_Low8bits" value="100" /&gt;
+          &lt;setting name="Intervalvalue_Low8bits_Scale" value="-1" /&gt;
+          &lt;setting name="Generate_interrupt_when_couting_started" value="no" /&gt;
+          &lt;setting name="Interrupt" value="used" /&gt;
+          &lt;setting name="Interrupt_priority" value="3" /&gt;
+          &lt;setting name="InterruptH_priority" value="3" /&gt;
+          &lt;setting name="InterruptH8" value="unused" /&gt;
+        &lt;/TAUInterval6&gt;
       &lt;/Channel6&gt;
       &lt;Channel7&gt;
         &lt;setting name="ChannelFunction" value="0" /&gt;
         &lt;setting name="Pinselection" value="-1" /&gt;
+        &lt;TAUInterval7&gt;
+          &lt;setting name="OperationMode" value="16bits" /&gt;
+          &lt;setting name="Count_clock" value="MCK clock" /&gt;
+          &lt;setting name="Sub_clock_mode" value="-1" /&gt;
+          &lt;setting name="Interval_value" value="1" /&gt;
+          &lt;setting name="Value_scale" value="0" /&gt;
+          &lt;setting name="Intervalvalue_High8bits" value="100" /&gt;
+          &lt;setting name="Intervalvalue_High8bits_scale" value="-1" /&gt;
+          &lt;setting name="Intervalvalue_Low8bits" value="100" /&gt;
+          &lt;setting name="Intervalvalue_Low8bits_Scale" value="-1" /&gt;
+          &lt;setting name="Generate_interrupt_when_couting_started" value="no" /&gt;
+          &lt;setting name="Interrupt" value="used" /&gt;
+          &lt;setting name="Interrupt_priority" value="3" /&gt;
+          &lt;setting name="InterruptH_priority" value="3" /&gt;
+          &lt;setting name="InterruptH8" value="unused" /&gt;
+        &lt;/TAUInterval7&gt;
       &lt;/Channel7&gt;
     &lt;/TAU0&gt;
     &lt;SAU0&gt;
@@ -6099,6 +6232,92 @@ Source\timer
         &lt;/P147&gt;
       &lt;/PortP14&gt;
     &lt;/PORT&gt;
+    &lt;DMA0&gt;
+      &lt;setting name="Operation" value="unused" /&gt;
+      &lt;setting name="Transfer_direction" value="SFR to RAM" /&gt;
+      &lt;setting name="Data_size" value="8 bits" /&gt;
+      &lt;setting name="SFRAddress" value="ADCR - 0x000fff1e" /&gt;
+      &lt;setting name="Transfer_byte_count" value="1024" /&gt;
+      &lt;setting name="RAM_address" value="" /&gt;
+      &lt;setting name="SourceTrigger" value="0" /&gt;
+      &lt;setting name="Interrupt" value="used" /&gt;
+      &lt;setting name="Interrupt_priority" value="3" /&gt;
+    &lt;/DMA0&gt;
+    &lt;DMA1&gt;
+      &lt;setting name="Operation" value="unused" /&gt;
+      &lt;setting name="Transfer_direction" value="SFR to RAM" /&gt;
+      &lt;setting name="Data_size" value="8 bits" /&gt;
+      &lt;setting name="SFRAddress" value="ADCR - 0x000fff1e" /&gt;
+      &lt;setting name="Transfer_byte_count" value="1024" /&gt;
+      &lt;setting name="RAM_address" value="" /&gt;
+      &lt;setting name="SourceTrigger" value="0" /&gt;
+      &lt;setting name="Interrupt" value="used" /&gt;
+      &lt;setting name="Interrupt_priority" value="3" /&gt;
+    &lt;/DMA1&gt;
+    &lt;PCLBUZ0&gt;
+      &lt;setting name="PCLBUZ_clock" value="16000 (fMAIN/2)(kHZ)" /&gt;
+      &lt;setting name="PCLBUZ" value="unused" /&gt;
+      &lt;setting name="PCLBUZClock" value="0" /&gt;
+    &lt;/PCLBUZ0&gt;
+    &lt;PCLBUZ1&gt;
+      &lt;setting name="PCLBUZ_clock" value="16000 (fMAIN/2)(kHZ)" /&gt;
+      &lt;setting name="PCLBUZ" value="unused" /&gt;
+      &lt;setting name="PCLBUZClock" value="0" /&gt;
+    &lt;/PCLBUZ1&gt;
+    &lt;IT&gt;
+      &lt;setting name="IntervalValue" value="100" /&gt;
+      &lt;setting name="ValueScale" value="1" /&gt;
+      &lt;setting name="Operation" value="disable" /&gt;
+      &lt;setting name="INTTIT_priority" value="3" /&gt;
+      &lt;setting name="INTITUse" value="true" /&gt;
+    &lt;/IT&gt;
+    &lt;RTC&gt;
+      &lt;setting name="Counter_initialvalue" value="01/01/2000 00:00:00" /&gt;
+      &lt;setting name="Alarm_time" value="01/01/2000 00:00:00" /&gt;
+      &lt;setting name="Alarm_weekday" value="Unchecked,Unchecked,Unchecked,Unchecked,Unchecked,Unchecked,Unchecked," /&gt;
+      &lt;setting name="RTC_mode" value="not use" /&gt;
+      &lt;setting name="AlarmEn" value="disable" /&gt;
+      &lt;setting name="Hour_system" value="0" /&gt;
+      &lt;setting name="Set_counter" value="false" /&gt;
+      &lt;setting name="Output_1Hz" value="disable" /&gt;
+      &lt;setting name="Set_alarm_value" value="false" /&gt;
+      &lt;setting name="INTRTC_Priority" value="3" /&gt;
+      &lt;setting name="INTRTC_constant_period_interrupt" value="not use" /&gt;
+      &lt;setting name="Constant_value" value="0" /&gt;
+      &lt;setting name="INTRTC_alarm_interrupt" value="use" /&gt;
+    &lt;/RTC&gt;
+    &lt;ADC&gt;
+      &lt;setting name="AD_convertion" value="unused" /&gt;
+      &lt;setting name="Comparator_operation" value="stop" /&gt;
+      &lt;setting name="Resolution" value="10bit" /&gt;
+      &lt;setting name="AD_Positive" value="VDD" /&gt;
+      &lt;setting name="AD_Negative" value="VSS" /&gt;
+      &lt;setting name="AD_Trigger" value="softtri" /&gt;
+      &lt;setting name="AD_Trigger_Timer" value="0" /&gt;
+      &lt;setting name="Mode" value="CONSELECT" /&gt;
+      &lt;setting name="InputPins" value="0" /&gt;
+      &lt;setting name="InputPinsAttach" value="alldigital" /&gt;
+      &lt;setting name="AD_Inputpin16" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin17" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin18" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin19" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin20" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin21" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin22" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin23" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin24" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin25" value="unused" /&gt;
+      &lt;setting name="AD_Inputpin26" value="unused" /&gt;
+      &lt;setting name="SelectedChannel" value="0" /&gt;
+      &lt;setting name="SelectedChannelAttach" value="sensor" /&gt;
+      &lt;setting name="ConvTimeMode" value="0" /&gt;
+      &lt;setting name="ConversionTime" value="0" /&gt;
+      &lt;setting name="AREAFunction" value="AREA1" /&gt;
+      &lt;setting name="AREAValue_ADUL" value="255" /&gt;
+      &lt;setting name="AREAValue_ADLL" value="0" /&gt;
+      &lt;setting name="Interrput_priority" value="3" /&gt;
+      &lt;setting name="AD_interrupt" value="used" /&gt;
+    &lt;/ADC&gt;
   &lt;/SETTING&gt;
 &lt;/RL78G13&gt;</CodeGenerator>
       <FormatVersion>1.0</FormatVersion>

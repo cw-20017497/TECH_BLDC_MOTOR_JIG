@@ -7,6 +7,7 @@
 #include "bldc_motor.h"
 #include "process_display.h"
 #include "hal_led.h"
+#include "hal_key.h"
 #include "buzzer.h"
 #include "key.h"
 #include "key_normal_handler.h"
@@ -26,6 +27,7 @@ typedef struct _sys_event_
 /* NORMAL */
 static void Evt_1ms_Handler( void );
 static void Evt_10ms_Handler( void );
+static void Evt_50ms_Handler( void );
 static void Evt_100ms_Handler( void );
 
 const static SysEvent_T	SysEventList[] =
@@ -33,6 +35,7 @@ const static SysEvent_T	SysEventList[] =
     /* TIMER ID,                    NORMAL,                     FCT,        EOL */
     { TIMER_ID_1MS,                 Evt_1ms_Handler,            NULL,       NULL },
     { TIMER_ID_10MS,                Evt_10ms_Handler,           NULL,       NULL },
+    { TIMER_ID_50MS,                Evt_50ms_Handler,           NULL,       NULL },
     { TIMER_ID_100MS,               Evt_100ms_Handler,          NULL,       NULL },
 };
 #define	SZ_LIST		( sizeof( SysEventList ) / sizeof( SysEvent_T ) )
@@ -79,9 +82,8 @@ static void Evt_1ms_Handler( void )
 {
     StartTimer( TIMER_ID_1MS, 1);
 
-
+    HAL_ScanKey();
 }
-
 
 static void Evt_10ms_Handler( void )
 {
@@ -92,6 +94,15 @@ static void Evt_10ms_Handler( void )
     ProcessKeyEventHandler();
 
     ProcessBldcMotor();
+}
+
+
+
+static void Evt_50ms_Handler( void )
+{
+    StartTimer( TIMER_ID_50MS, 50);
+
+    ContyUpDownVolt();
 }
 
 static void Evt_100ms_Handler(void)
@@ -116,9 +127,9 @@ void InitSystem(void)
     InitBuzzer();
     InitKeyHandler();
     InitDisplay();
+    HAL_InitLed();
 
     RegisterTimerISR( TimerIsrCallback  );
 
-    R_TAU0_Channel2_Start();
 }
 

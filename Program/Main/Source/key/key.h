@@ -8,16 +8,16 @@ void InitKey(void);
 /* SINGLE KEY */
 #define  K_NONE             HAL_KEY_NONE
 
-#define  K_AMOUNT           HAL_KEY_1
-#define  K_COLD             HAL_KEY_2
-#define  K_ROOM             HAL_KEY_3
-#define  K_HOT              HAL_KEY_4       
+#define  K_1           HAL_KEY_1
+#define  K_2           HAL_KEY_2
+#define  K_3           HAL_KEY_3
+#define  K_4           HAL_KEY_4       
 
 #define  K_ALL              HAL_KEY_ALL
 
 /* MULTI KEY */
-#define K_ON           (K_HOT | K_ROOM)
-#define K_OFF          (K_COLD | K_AMOUNT)
+#define K_ON           (K_1 | K_2)
+#define K_OFF          (K_3 | K_4)
 
 U32 GetKeyVal( void );
 U32 GetKeyPopVal( void );

@@ -5,6 +5,10 @@
 #include "hal_led_onoff.h"
 
 
+#define ALL_ON      0xFFU
+#define ALL_OFF     0x00U
+
+
 #define MAX_TICK    10UL        // @100us... * 10 = 1ms  ( 100hz )
 U16 u16Cycle            = MAX_TICK;
 U16 GroupB_DimmingTick  = MAX_TICK;
@@ -22,6 +26,44 @@ typedef struct _leds_
 Led_T   OnOff;
 Led_T   Dimming;
 
+
+void HAL_InitLed(void)
+{
+    MEMSET((void __FAR *)&OnOff.Leds[0], OFF, MAX_LED );
+    MEMSET((void __FAR *)&Dimming.Leds[0], OFF, MAX_LED );
+
+    OnOff.Duty = DEFAULT_ONOFF_DUTY;
+    Dimming.Duty = DEFAULT_DIMMING_DUTY;
+
+    R_TAU0_Channel2_Start();
+}
+
+
+// ON/OFF
+void HAL_TurnOnOffLEDAll(U8 mu8OnOff)
+{
+    if( mu8OnOff == ON )
+    {
+        MEMSET((void __FAR *)&OnOff.Leds[0], ALL_ON, MAX_LED );
+    }
+    else 
+    {
+        MEMSET((void __FAR *)&OnOff.Leds[0], ALL_OFF, MAX_LED );
+    }
+}
+
+// DIMMING 
+void HAL_DimmingLedAll(U8 mu8OnOff)
+{
+    if( mu8OnOff == ON )
+    {
+        MEMSET((void __FAR *)&Dimming.Leds[0], ALL_ON, MAX_LED );
+    }
+    else 
+    {
+        MEMSET((void __FAR *)&Dimming.Leds[0], ALL_OFF, MAX_LED );
+    }
+}
 
 // Check led bit
 // return : true or false
@@ -270,7 +312,6 @@ static void ControlLed(void)
 
 
 // 디밍 제어 1ms
-// 처리 시간 : 0.260 ms
 __interrupt static void r_tau0_channel2_interrupt(void)
 {
     EI();

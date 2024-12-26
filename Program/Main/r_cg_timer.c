@@ -23,7 +23,7 @@
 * Device(s)    : R5F100LE
 * Tool-Chain   : CA78K0R
 * Description  : This file implements device driver for TAU module.
-* Creation Date: 2024-12-16
+* Creation Date: 2024-12-23
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -92,18 +92,15 @@ void R_TAU0_Create(void)
     /* Mask channel 7 interrupt */
     TMMK07 = 1U;    /* disable INTTM07 interrupt */
     TMIF07 = 0U;    /* clear INTTM07 interrupt flag */
-    /* Set INTTM00 low priority */
+    /* Set INTTM00 level 2 priority */
     TMPR100 = 1U;
-    TMPR000 = 1U;
+    TMPR000 = 0U;
     /* Set INTTM01 low priority */
     TMPR101 = 1U;
     TMPR001 = 1U;
     /* Set INTTM02 low priority */
     TMPR102 = 1U;
     TMPR002 = 1U;
-    /* Set INTTM05 low priority */
-    TMPR105 = 1U;
-    TMPR005 = 1U;
     /* Channel 0 used as interval timer */
     TMR00 = _0000_TAU_CLOCK_SELECT_CKM0 | _0000_TAU_CLOCK_MODE_CKS | _0000_TAU_COMBINATION_SLAVE |
             _0000_TAU_TRIGGER_SOFTWARE | _0000_TAU_MODE_INTERVAL_TIMER | _0000_TAU_START_INT_UNUSED;
@@ -113,7 +110,7 @@ void R_TAU0_Create(void)
     /* Channel 1 used as interval timer */
     TMR01 = _0000_TAU_CLOCK_SELECT_CKM0 | _0000_TAU_CLOCK_MODE_CKS | _0000_TAU_16BITS_MODE |
             _0000_TAU_TRIGGER_SOFTWARE | _0000_TAU_MODE_INTERVAL_TIMER | _0000_TAU_START_INT_UNUSED;
-    TDR01 = _63FF_TAU_TDR01_VALUE;
+    TDR01 = _577F_TAU_TDR01_VALUE;
     TOM0 &= ~_0002_TAU_CH1_OUTPUT_COMBIN;
     TOL0 &= ~_0002_TAU_CH1_OUTPUT_LEVEL_L;
     TO0 &= ~_0002_TAU_CH1_OUTPUT_VALUE_1;
@@ -121,7 +118,7 @@ void R_TAU0_Create(void)
     /* Channel 2 used as interval timer */
     TMR02 = _0000_TAU_CLOCK_SELECT_CKM0 | _0000_TAU_CLOCK_MODE_CKS | _0000_TAU_COMBINATION_SLAVE |
             _0000_TAU_TRIGGER_SOFTWARE | _0000_TAU_MODE_INTERVAL_TIMER | _0000_TAU_START_INT_UNUSED;
-    TDR02 = _0C7F_TAU_TDR02_VALUE;
+    TDR02 = _7CFF_TAU_TDR02_VALUE;
     TOM0 &= ~_0004_TAU_CH2_OUTPUT_COMBIN;
     TOL0 &= ~_0004_TAU_CH2_OUTPUT_LEVEL_L;
     TO0 &= ~_0004_TAU_CH2_OUTPUT_VALUE_1;
@@ -137,7 +134,7 @@ void R_TAU0_Create(void)
     /* Channel 4 is used as master channel for PWM output function */
     TMR04 = _0000_TAU_CLOCK_SELECT_CKM0 | _0000_TAU_CLOCK_MODE_CKS | _0800_TAU_COMBINATION_MASTER |
             _0000_TAU_TRIGGER_SOFTWARE | _0001_TAU_MODE_PWM_MASTER;
-    TDR04 = _0C7F_TAU_TDR04_VALUE;
+    TDR04 = _063F_TAU_TDR04_VALUE;
     TOM0 &= ~_0010_TAU_CH4_OUTPUT_COMBIN;
     TOL0 &= ~_0010_TAU_CH4_OUTPUT_LEVEL_L;
     TO0 &= ~_0010_TAU_CH4_OUTPUT_VALUE_1;
@@ -145,9 +142,9 @@ void R_TAU0_Create(void)
     /* Channel 5 is used as slave channel for PWM output function */
     TMR05 = _0000_TAU_CLOCK_SELECT_CKM0 | _0000_TAU_CLOCK_MODE_CKS | _0000_TAU_COMBINATION_SLAVE |
             _0400_TAU_TRIGGER_MASTER_INT | _0009_TAU_MODE_PWM_SLAVE;
-    TDR05 = _0280_TAU_TDR05_VALUE;
+    TDR05 = _0140_TAU_TDR05_VALUE;
     TOM0 |= _0020_TAU_CH5_OUTPUT_COMBIN;
-    TOL0 &= ~_0020_TAU_CH5_OUTPUT_LEVEL_L;
+    TOL0 |= _0020_TAU_CH5_OUTPUT_LEVEL_L;
     TO0 |= _0020_TAU_CH5_OUTPUT_VALUE_1;
     TOE0 |= _0020_TAU_CH5_OUTPUT_ENABLE;
     /* Set TO03 pin */
@@ -271,8 +268,6 @@ void R_TAU0_Channel3_Stop(void)
 ***********************************************************************************************************************/
 void R_TAU0_Channel4_Start(void)
 {
-    TMIF05 = 0U;    /* clear INTTM05 interrupt flag */
-    TMMK05 = 0U;    /* enable INTTM05 interrupt */
     TOE0 |= _0020_TAU_CH5_OUTPUT_ENABLE;
     TS0 |= _0010_TAU_CH4_START_TRG_ON | _0020_TAU_CH5_START_TRG_ON;
 }
@@ -287,9 +282,6 @@ void R_TAU0_Channel4_Stop(void)
 {
     TT0 |= _0010_TAU_CH4_STOP_TRG_ON | _0020_TAU_CH5_STOP_TRG_ON;
     TOE0 &= ~_0020_TAU_CH5_OUTPUT_ENABLE;
-    /* Mask channel 5 interrupt */
-    TMMK05 = 1U;    /* disable INTTM05 interrupt */
-    TMIF05 = 0U;    /* clear INTTM05 interrupt flag */
 }
 
 /* Start user code for adding. Do not edit comment generated here */

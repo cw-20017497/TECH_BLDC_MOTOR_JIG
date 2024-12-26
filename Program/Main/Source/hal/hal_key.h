@@ -18,4 +18,6 @@ U32 HAL_GetKeyVal(void);
 void HAL_SetLeverWater(U8 mu8Val);
 U8 HAL_GetLeverWater(void);
 
+void HAL_ScanKey(void);
+
 #endif /* __HAL_KEY_H__ */

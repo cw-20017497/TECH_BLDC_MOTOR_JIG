@@ -55,12 +55,11 @@ static U8 gu8Digit[10] =
 #define SEG_BCD             (SEG_B|SEG_C|SEG_D)
 #define SEG_CD              (SEG_C|SEG_D)
 
-
 /* 7segemnt id */
-#define SEGMENT_1       SEG_1_G
-#define SEGMENT_10      SEG_2_G
-#define SEGMENT_100     SEG_3_G
-#define SEGMENT_1000    0 //SEG_0_C
+#define SEGMENT_1       SEG_3_A
+#define SEGMENT_10      SEG_2_A
+#define SEGMENT_100     SEG_1_A
+#define SEGMENT_1000    100
 static void DispSegment(U8 mu8Seg, U8 mu8Val)
 {
     LedId_T mLedId;
@@ -74,22 +73,14 @@ static void DispSegment(U8 mu8Seg, U8 mu8Val)
     else
     {
         mLedId = mu8Seg;
-   //     HAL_TurnOnOffLED( mLedId,     ((mu8Val & 0x40) >> 6) );
-   //     HAL_TurnOnOffLED( mLedId + 1, ((mu8Val & 0x20) >> 5) );
-   //     HAL_TurnOnOffLED( mLedId + 2, ((mu8Val & 0x10) >> 4) );
-   //     HAL_TurnOnOffLED( mLedId + 3, ((mu8Val & 0x08) >> 3) );
-   //     HAL_TurnOnOffLED( mLedId + 4, ((mu8Val & 0x04) >> 2) );
-   //     HAL_TurnOnOffLED( mLedId + 5, ((mu8Val & 0x02) >> 1) );
-   //     HAL_TurnOnOffLED( mLedId + 6, (mu8Val & 0x01)  );
-
-
-        HAL_TurnOnOffLED( mLedId,     ((mu8Val & 0x02) >> 1) );
-        HAL_TurnOnOffLED( mLedId + 1, ((mu8Val & 0x40) >> 6) );
-        HAL_TurnOnOffLED( mLedId + 2, ((mu8Val & 0x04) >> 2) );
-        HAL_TurnOnOffLED( mLedId + 3, ((mu8Val & 0x08) >> 3) );
-        HAL_TurnOnOffLED( mLedId + 4, ((mu8Val & 0x10) >> 4) );
-        HAL_TurnOnOffLED( mLedId + 5, ((mu8Val & 0x20) >> 5) );
-        HAL_TurnOnOffLED( mLedId + 6, (mu8Val & 0x01)  );
+        
+        HAL_TurnOnOffLED( mLedId,     ((mu8Val & 0x01) ));          // a    0x01
+        HAL_TurnOnOffLED( mLedId + 1, ((mu8Val & 0x20) >> 5) );     // f    0x20
+        HAL_TurnOnOffLED( mLedId + 2, ((mu8Val & 0x40) >> 6) );     // g    0x40
+        HAL_TurnOnOffLED( mLedId + 3, ((mu8Val & 0x10) >> 4) );     // e    0x10
+        HAL_TurnOnOffLED( mLedId + 4, ((mu8Val & 0x08) >> 3) );     // d    0x08
+        HAL_TurnOnOffLED( mLedId + 5, ((mu8Val & 0x04) >> 2) );     // c    0x04
+        HAL_TurnOnOffLED( mLedId + 6, ((mu8Val & 0x02) >> 1) );     // b    0x02
     }
 }
 
@@ -129,7 +120,8 @@ void DispSegmentDigit(U16 mu16Val)
     }
     else
     {
-        DispSegment( SEGMENT_10, CHAR_SPACE );
+        //DispSegment( SEGMENT_10, CHAR_SPACE );
+        DispSegment( SEGMENT_10, gu8Digit[0] );
     }
 
     DispSegment( SEGMENT_1, gu8Digit[ mu8Val_1 ] );
@@ -318,20 +310,20 @@ void DispSegmentOff(void)
 
 void TurnOffAllLED(void)
 {
-    //HAL_TurnOnOffLEDAll( OFF );
-    //HAL_DimmingLedAll( OFF );
+    HAL_TurnOnOffLEDAll( OFF );
+    HAL_DimmingLedAll( OFF );
 }
 
 
 void TurnOnAllLED(void)
 {
-    //HAL_TurnOnOffLEDAll( ON );
-    //HAL_DimmingLedAll( OFF );
+    HAL_TurnOnOffLEDAll( ON );
+    HAL_DimmingLedAll( OFF );
 }
 
 #if CONFIG_TEST_LED 
-U8 dbg_duty_on           = 90;
-U8 dbg_duty_dimming      = 40;
+U8 dbg_duty_on           = 10;
+U8 dbg_duty_dimming      = 0;
 
 U8 dbg_duty_dark         = 50;
 U8 dbg_duty_dimming_dark = 20;
@@ -351,30 +343,22 @@ void DispLedDuty(void)
 
 extern U8 bldc_dir;
 extern U8 bldc_break;
+U16 dbg_seg_val = 0;
 void DispWaterOutAmount(U16 mu16Val)
 {
-    //if( mu16Val >= 9999 )
     if( bldc_break == TRUE )
     {
         // 연속 선택시 mL 미표시
-        //DispSegmentChar(SEGMENT_CHAR_ID_CIRCLE);
         DispSegmentChar(SEGMENT_CHAR_ID_BAR_CENTER);
+        HAL_TurnOnOffLED( SEG_22, OFF );
     }
     else
     {
         // 정량 선택시 mL 표시
         DispSegmentDigit( mu16Val );
+
+        HAL_TurnOnOffLED( SEG_22, ON );
         
-        //if( bldc_dir == 0 )
-        //{
-        //    HAL_TurnOnOffLED( ICON_ML, ON );
-        //    HAL_TurnOnOffLED( ICON_PERCENT, OFF );
-        //}
-        //else
-        //{
-        //    HAL_TurnOnOffLED( ICON_ML, OFF );
-        //    HAL_TurnOnOffLED( ICON_PERCENT, ON );
-        //}
     }
 }
 

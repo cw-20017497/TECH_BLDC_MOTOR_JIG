@@ -132,6 +132,8 @@ static void ProcessDisplayBoot(void)
     static U8 mu8Count = 5;
     static U8 mu8Toggle = 0;
 
+    DispLedDuty();
+
     if( IsExpiredDispBlinkTimer( DISP_TIMER_ID_500MS ) == TRUE )
     {
         mu8Toggle = !mu8Toggle;
@@ -162,24 +164,39 @@ static void ProcessDisplayBoot(void)
 
 
 
-U8 mu8SelButton = 1;
-U16 dbg_amount = 120;
 extern F32 bldc_volt;
+static void DispVolt(void)
+{
+    U16 volt;
+    volt = (U16)( bldc_volt * 10.0f );
+    DispWaterOutAmount( volt );
+}
+
+extern U8 set_blink;
 static void ProcessDisplayNormalMode(void)
 {
+    static blink_cnt = 5;
+
     DispLedDuty();
 
-
-    ContyUpDownVolt();
-
-
+    if( set_blink == FALSE )
     {
-        U16 volt;
-        volt = (U16)( bldc_volt * 10.0f );
-        DispWaterOutAmount( volt );
+        blink_cnt = 5;
+        DispVolt();
     }
-
-
+    else
+    {
+        blink_cnt--;
+        if( blink_cnt != 0 )
+        {
+            TurnOffAllLED();
+        }
+        else
+        {
+            blink_cnt = 5;
+            set_blink = FALSE;
+        }
+    }
 }
 
 void ProcessDisplay(void)
@@ -192,6 +209,8 @@ void ProcessDisplay(void)
         ProcessDisplayBoot();
         return ;
     }
+
+    DispLedDuty();
 
     /* NORMAL MODE */
     ProcessDisplayNormalMode();

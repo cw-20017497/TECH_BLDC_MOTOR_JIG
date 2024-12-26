@@ -4,27 +4,17 @@
 #include "key_common_handler.h"
 #include "key_event_lib.h"
 #include "front.h"
-//#include "hot_water.h"
-//#include "cold_water.h"
-//#include "water_out.h"
-//#include "power_saving.h"
 #include "sound.h"
-//#include "eeprom.h"
-//#include "error.h"
 #include "process_display.h"
-//#include "eol.h"
-//#include "fct.h"
-//#include "time_short.h"
 #include "timer.h"
 #include "timer_id.h"
-//#include "flush_water_out.h"
-//#include "hal_step_motor.h"
-//#include "moving_faucet.h"
 #include "bldc_motor.h"
 
 
 static U8 SelSound(void);
 
+static U8 SelBldcUpEx(void);
+static U8 SelBldcDownEx(void);
 static U8 SelBldcUp(void);
 static U8 SelBldcDown(void);
 static U8 SelBldcDir(void);
@@ -37,15 +27,12 @@ KeyEventList_T KeyEventList[] =
 {
     /* KEY,            Short,            2sec,           3sec,  5sec,  Pop,           TS */
     /* SINGLE KEY */
-    { K_HOT,            SelBldcUp,       NULL,  NULL,  NULL,  KeyStopCont,    KeyContUp },
-    { K_ROOM,           SelBldcDown,     NULL,  NULL,  NULL,  KeyStopCont,    KeyContDown },
-    { K_COLD,           SelBldcDir,      NULL,  NULL,  NULL,  NULL,             NULL },
-    { K_AMOUNT,         SelBldcBreak,    NULL,  NULL,  NULL,  NULL,             NULL },
-    { K_ON,             NULL,  NULL,  NULL,  NULL,  NULL,          SelBldcOn },
-    { K_OFF,            NULL,  NULL,  NULL,  NULL,  NULL,          SelBldcStop },
-
-    /* KEY,            Short,            2sec,           3sec,  5sec,  Pop,           TS */
-    ///* SINGLE KEY */
+    { K_1,         SelBldcUpEx,       NULL,  NULL,  NULL,  KeyStopCont,   KeyContUp },
+    { K_2,         SelBldcDownEx,     NULL,  NULL,  NULL,  KeyStopCont,   KeyContDown },
+    { K_3,         SelBldcDir,      NULL,  NULL,  NULL,  NULL,          NULL },
+    { K_4,         SelBldcBreak,    NULL,  NULL,  NULL,  NULL,          NULL },
+    { K_ON,             NULL,            NULL,  NULL,  NULL,  NULL,          SelBldcOn },
+    { K_OFF,            NULL,            NULL,  NULL,  NULL,  NULL,          SelBldcStop },
 };
 
 U8 IsValidNormalKeyCondition(U32 mu32Key)
@@ -133,8 +120,17 @@ void ContyUpDownVolt(void)
 U8 bldc_dir = MOTOR_DIR_CW;
 U8 bldc_break = FALSE;
 F32 bldc_volt = 0.0f;
+U8 set_blink = FALSE;
 static U8 SelBldcUp(void)
 {
+    U8 sound = SOUND_SELECT;
+
+    if( bldc_volt == 0 )
+    {
+        return SOUND_ERROR;
+    }
+
+
     bldc_break = FALSE;
     BreakBldcMotor( bldc_break );
 
@@ -150,30 +146,70 @@ static U8 SelBldcUp(void)
     if( bldc_volt >= MAX_BLDC_OUTPUT_VOLT )
     {
         bldc_volt = MAX_BLDC_OUTPUT_VOLT;
+        sound = SOUND_ERROR;
     }
 
     StartBldcMotor( bldc_dir, bldc_volt );
-    return SOUND_SELECT;
+    return sound;
+}
+
+static U8 SelBldcUpEx(void)
+{
+    U8 sound;
+
+    sound = SelBldcUp();
+    if( bldc_volt >= MAX_BLDC_OUTPUT_VOLT )
+    {
+        set_blink = TRUE;
+    }
+    return sound;
 }
 
 static U8 SelBldcDown(void)
 {
+    U8 sound = SOUND_SELECT;
+
+
+    if( bldc_volt == 0 )
+    {
+        return SOUND_ERROR;
+    }
+
     bldc_break = FALSE;
     BreakBldcMotor( bldc_break );
 
 
     bldc_volt = bldc_volt - 0.1f;
-    if( bldc_volt <= 0.0f )
+    if( bldc_volt <= 3.0f )
     {
-        bldc_volt = 0.0f;
+        bldc_volt = 3.0f;
+        sound = SOUND_ERROR;
     }
 
     StartBldcMotor( bldc_dir, bldc_volt );
-    return SOUND_SELECT;
+    return sound;
+}
+
+static U8 SelBldcDownEx(void)
+{
+    U8 sound;
+
+    sound = SelBldcDown();
+    if( bldc_volt <= 3.0f )
+    {
+        set_blink = TRUE;
+    }
+
+    return sound;
 }
 
 static U8 SelBldcDir(void)
 {
+    if( bldc_volt == 0 )
+    {
+        return SOUND_ERROR;
+    }
+
     if( bldc_dir == MOTOR_DIR_CW )
     {
         bldc_dir = MOTOR_DIR_CCW;
@@ -207,12 +243,19 @@ static U8 SelBldcOn(void)
 {
     bldc_volt = 12.0f;
     StartBldcMotor( bldc_dir, bldc_volt );
-    return SOUND_POWER_ON;
+
+    bldc_break = FALSE;
+    BreakBldcMotor( bldc_break );
+
+    return SOUND_CONFIG_SETUP;
 }
 
 static U8 SelBldcStop(void)
 {
     bldc_volt = 0.0f;
     StartBldcMotor( bldc_dir, bldc_volt );
-    return SOUND_POWER_OFF;
+
+    bldc_break = TRUE;
+    BreakBldcMotor( bldc_break );
+    return SOUND_CONFIG_CANCEL;
 }

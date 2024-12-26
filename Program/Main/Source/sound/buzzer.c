@@ -7,11 +7,15 @@
 #define	P_BUZZER_ON		         P_BUZZER_ONOFF
 #define	BUZ_SET_NOTE( x )	      do{ TDR03 = (x); }while(0)
 #define  BUZZER_TIMER_START()    do{ R_TAU0_Channel3_Start(); }while(0)
+#if 0
 #define  BUZZER_TIMER_STOP()     \
     do{ \
         R_TAU0_Channel3_Stop(); \
         TO0 |= _0008_TAU_CH3_OUTPUT_VALUE_1;\
     }while(0)
+#else
+#define  BUZZER_TIMER_STOP()     NOP()
+#endif
 
 /* Local Variable */
 U8	gu8Mute  = 0;           // 음소거모드 flag
@@ -69,9 +73,11 @@ static void SetBuzTime(U16 mu16Time )
 /// @return   void
 void BuzStep(U8 mu8Step)
 {
+    DI();
 	gu16Buzzer_Time = 0;
 	gu8Buzzer_Order = 1;
 	gu8Buzzer_Mode = mu8Step;
+    EI();
 }
 
 U8 IsDonePlayBuz(void)

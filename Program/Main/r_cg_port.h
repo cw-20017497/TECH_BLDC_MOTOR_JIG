@@ -23,7 +23,7 @@
 * Device(s)    : R5F100LE
 * Tool-Chain   : CA78K0R
 * Description  : This file implements device driver for PORT module.
-* Creation Date: 2024-12-16
+* Creation Date: 2024-12-23
 ***********************************************************************************************************************/
 
 #ifndef PORT_H

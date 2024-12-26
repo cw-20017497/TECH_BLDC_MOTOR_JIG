@@ -47,7 +47,7 @@ SoundList_T  SoundList[] =
 
 void Sound(SoundId_T mId)
 {
-#if 1
+#if 0
     U8   i;
 
     // Check Buzzer playing sound...

@@ -27,7 +27,6 @@ const static LeverEventList_T LeverEventList[] =
 
 
 /* WATER OUT - START */
-extern U8 mu8SelButton;
 static U8 LeverOpenTapWater(void)
 {
     U8 mu8Sound = SOUND_EFFLUENT;
@@ -54,7 +53,6 @@ static U8 LeverOpenTapWater(void)
         mu8Sound = SOUND_EFFLUENT_CONTINUE;
     }
 
-    mu8SelButton = 1;
     SetWaterOutSelect( SEL_WATER_ROOM );
     mu8Sound = StartWaterOutFlush( mu8Sound );
 

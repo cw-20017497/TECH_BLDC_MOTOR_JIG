@@ -23,7 +23,7 @@
 * Device(s)    : R5F100LE
 * Tool-Chain   : CA78K0R
 * Description  : This file implements device driver for TAU module.
-* Creation Date: 2024-12-16
+* Creation Date: 2024-12-23
 ***********************************************************************************************************************/
 
 #ifndef TAU_H
@@ -398,11 +398,11 @@ Macro definitions
 /* Clock divisor for TAU0 channel 0 */
 #define _0001_TAU0_CHANNEL0_DIVISOR             (0x0001U)
 /* 16-bit timer data register 01 (TDR01) */
-#define _63FF_TAU_TDR01_VALUE                   (0x63FFU)
+#define _577F_TAU_TDR01_VALUE                   (0x577FU)
 /* Clock divisor for TAU0 channel 1 */
 #define _0001_TAU0_CHANNEL1_DIVISOR             (0x0001U)
 /* 16-bit timer data register 02 (TDR02) */
-#define _0C7F_TAU_TDR02_VALUE                   (0x0C7FU)
+#define _7CFF_TAU_TDR02_VALUE                   (0x7CFFU)
 /* Clock divisor for TAU0 channel 2 */
 #define _0001_TAU0_CHANNEL2_DIVISOR             (0x0001U)
 /* 16-bit timer data register 03 (TDR03) */
@@ -410,9 +410,9 @@ Macro definitions
 /* Clock divisor for TAU0 channel 3 */
 #define _0001_TAU0_CHANNEL3_DIVISOR             (0x0001U)
 /* 16-bit timer data register 04 (TDR04) */
-#define _0C7F_TAU_TDR04_VALUE                   (0x0C7FU)
+#define _063F_TAU_TDR04_VALUE                   (0x063FU)
 /* 16-bit timer data register 05 (TDR05) */
-#define _0280_TAU_TDR05_VALUE                   (0x0280U)
+#define _0140_TAU_TDR05_VALUE                   (0x0140U)
 /* Clock divisor for TAU0 channel 4 */
 #define _0001_TAU0_CHANNEL4_DIVISOR             (0x0001U)
 /* Clock divisor for TAU0 channel 5 */
