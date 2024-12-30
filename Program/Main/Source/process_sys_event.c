@@ -29,6 +29,7 @@ static void Evt_1ms_Handler( void );
 static void Evt_10ms_Handler( void );
 static void Evt_50ms_Handler( void );
 static void Evt_100ms_Handler( void );
+extern void Evt_Durability_Handler( void );
 
 const static SysEvent_T	SysEventList[] =
 {
@@ -37,6 +38,7 @@ const static SysEvent_T	SysEventList[] =
     { TIMER_ID_10MS,                Evt_10ms_Handler,           NULL,       NULL },
     { TIMER_ID_50MS,                Evt_50ms_Handler,           NULL,       NULL },
     { TIMER_ID_100MS,               Evt_100ms_Handler,          NULL,       NULL },
+    { TIMER_ID_DURABILITY,          Evt_Durability_Handler,     NULL,       NULL },
 };
 #define	SZ_LIST		( sizeof( SysEventList ) / sizeof( SysEvent_T ) )
 

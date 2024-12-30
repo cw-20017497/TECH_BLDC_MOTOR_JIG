@@ -22,21 +22,35 @@ static U8 SelBldcBreak(void);
 static U8 SelBldcStop(void);
 static U8 SelBldcOn(void);
 
+
+U8 TestDurability = FALSE;
+U8 TestDurability_Step = 0;
+static U8 SelDurability(void);
+
 // 일반 모드 리스트
 KeyEventList_T KeyEventList[] =
 {
     /* KEY,            Short,            2sec,           3sec,  5sec,  Pop,           TS */
-    /* SINGLE KEY */
-    { K_1,         SelBldcUpEx,       NULL,  NULL,  NULL,  KeyStopCont,   KeyContUp },
-    { K_2,         SelBldcDownEx,     NULL,  NULL,  NULL,  KeyStopCont,   KeyContDown },
-    { K_3,         SelBldcDir,      NULL,  NULL,  NULL,  NULL,          NULL },
-    { K_4,         SelBldcBreak,    NULL,  NULL,  NULL,  NULL,          NULL },
+    { K_1,              SelBldcUpEx,       NULL,  NULL,  NULL,  KeyStopCont,   KeyContUp },
+    { K_2,              SelBldcDownEx,     NULL,  NULL,  NULL,  KeyStopCont,   KeyContDown },
+    { K_3,              SelBldcDir,      NULL,  NULL,  NULL,  NULL,          NULL },
+    { K_4,              SelBldcBreak,    NULL,  NULL,  NULL,  NULL,          NULL },
     { K_ON,             NULL,            NULL,  NULL,  NULL,  NULL,          SelBldcOn },
     { K_OFF,            NULL,            NULL,  NULL,  NULL,  NULL,          SelBldcStop },
+#if CONFIG_TEST_DURABILITY
+    { K_DURABILITY,     NULL,            NULL,  NULL,  NULL,  NULL,          SelDurability },
+#endif
 };
 
 U8 IsValidNormalKeyCondition(U32 mu32Key)
 {
+    if( TestDurability == TRUE )
+    {
+        if( mu32Key != K_DURABILITY )
+        {
+            return FALSE;
+        }
+    }
     /* 전체 잠금 상태 */
     //if( GetLockAll() == LOCK )
     //{
@@ -259,3 +273,74 @@ static U8 SelBldcStop(void)
     BreakBldcMotor( bldc_break );
     return SOUND_CONFIG_CANCEL;
 }
+
+
+static U8 SelDurability(void)
+{
+    TestDurability = !TestDurability;
+
+    if( TestDurability == TRUE )
+    {
+        StartTimer( TIMER_ID_DURABILITY, SEC(1) ); 
+        TestDurability_Step = 0;
+    }
+    else
+    {
+        StopTimer( TIMER_ID_DURABILITY );
+        return SelBldcStop();
+    }
+
+   return SOUND_SELECT;
+}
+
+
+void Evt_Durability_Handler( void )
+{
+    switch( TestDurability_Step )
+    {
+        case 0:
+            // ON CW - 24V 
+            StartBldcMotor( MOTOR_DIR_CW, 24.0f );
+            BreakBldcMotor( FALSE );
+            TestDurability_Step++;
+
+            StartTimer( TIMER_ID_DURABILITY, SEC(2) );
+            break;
+
+        case 1:
+            // OFF 
+            StartBldcMotor( MOTOR_DIR_CW, 0.0f );
+            BreakBldcMotor( TRUE );
+            TestDurability_Step++;
+
+            StartTimer( TIMER_ID_DURABILITY, SEC(2) );
+            break;
+
+        case 2:
+            // ON CCW, 24V 
+            StartBldcMotor( MOTOR_DIR_CCW, 24.0f );
+            BreakBldcMotor( FALSE );
+            TestDurability_Step++;
+
+            StartTimer( TIMER_ID_DURABILITY, SEC(2) );
+            break;
+
+        case 3:
+            // OFF 
+            StartBldcMotor( MOTOR_DIR_CCW, 0.0f );
+            BreakBldcMotor( TRUE );
+            TestDurability_Step = 0;
+
+            StartTimer( TIMER_ID_DURABILITY, SEC(2) );
+            break;
+
+        default:
+            StartBldcMotor( MOTOR_DIR_CCW, 24.0f );
+            BreakBldcMotor( TRUE );
+            TestDurability_Step = 0;
+
+            StartTimer( TIMER_ID_DURABILITY, SEC(1) );
+            break;
+    }
+}
+

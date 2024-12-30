@@ -18,6 +18,7 @@ void InitKey(void);
 /* MULTI KEY */
 #define K_ON           (K_1 | K_2)
 #define K_OFF          (K_3 | K_4)
+#define K_DURABILITY   (K_1 | K_4)
 
 U32 GetKeyVal( void );
 U32 GetKeyPopVal( void );

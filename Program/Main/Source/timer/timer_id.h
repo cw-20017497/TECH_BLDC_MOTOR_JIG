@@ -8,6 +8,8 @@ enum
     TIMER_ID_10MS,
     TIMER_ID_50MS,
     TIMER_ID_100MS,
+
+    TIMER_ID_DURABILITY,
     
     MAX_TIMER_ID_NUM
 };

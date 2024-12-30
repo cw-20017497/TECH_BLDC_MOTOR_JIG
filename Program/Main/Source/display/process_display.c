@@ -175,7 +175,7 @@ static void DispVolt(void)
 extern U8 set_blink;
 static void ProcessDisplayNormalMode(void)
 {
-    static blink_cnt = 5;
+    static U8 blink_cnt = 5;
 
     DispLedDuty();
 
@@ -199,6 +199,40 @@ static void ProcessDisplayNormalMode(void)
     }
 }
 
+
+extern U8 TestDurability;
+static void DispDurability(void )
+{
+    DispSegmentChar(SEGMENT_CHAR_ID_BAR_CENTER);
+    HAL_TurnOnOffLED( SEG_22, OFF );
+}
+
+static void ProcessDisplayTestDurability(void)
+{
+    static U8 blink_cnt = 5;
+    static U8 toggle = 0;
+
+    DispLedDuty();
+
+    blink_cnt--;
+    if( blink_cnt != 0 )
+    {
+        if( toggle )
+        {
+            TurnOffAllLED();
+        }
+        else
+        {
+            DispDurability();
+        }
+    }
+    else
+    {
+        toggle = !toggle;
+        blink_cnt = 5;
+    }
+}
+
 void ProcessDisplay(void)
 {
     UpdateDisplayTimer();
@@ -213,5 +247,13 @@ void ProcessDisplay(void)
     DispLedDuty();
 
     /* NORMAL MODE */
-    ProcessDisplayNormalMode();
+    if( TestDurability == TRUE )
+    {
+        ProcessDisplayTestDurability();
+    }
+    else
+    {
+        ProcessDisplayNormalMode();
+    }
+
 }
